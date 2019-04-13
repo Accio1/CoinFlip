@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Heads or Tails</title>
+	</head>
+	<body>
+		<h1>Heads or Tails?</h1>
+		<p id="buttonc"><button id="flip">Flip</button></p>
+		<p id="result"></p>
+		<p id="t"></p>
+		<script>
+			document.getElementById("flip").onclick=function(){
+				var rawnumber=Math.floor(Math.random()*10)+1
+				if(rawnumber<=5){
+					var final="Heads"
+				}
+				else{
+					var final="Tails"
+				}
+				document.getElementById("result").innerHTML=final
+				document.getElementById("buttonc").innerHTML=""
+				document.getElementById("t").innerHTML="<a href=''>Try Again</a>"
+			}
+		</script>
+	</body>
+</html>
