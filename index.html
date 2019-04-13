@@ -3,12 +3,53 @@
 	<head>
 		<title>Heads or Tails</title>
 		<link rel="icon" type="image/png" href="Icon.png">
+		<style>
+		body{
+  			background-color: #00bfff;
+			}
+			
+		.main {
+			padding: 5px;
+			text-align: center;
+			background: #00bfff;
+			color: black;
+			font-size: 15px;
+			font-family: "Comic Sans MS", cursive, sans-serif
+			}
+			
+		input[type=text]{
+			width:25%;
+			padding:12px 20px;
+			border:2px solid white;
+  			border-radius:4px;
+			background-color:#F0F0F0;
+			}
+			
+		#flip {
+			background-color: #4CAF50;
+			font-size: 16px;
+			padding: 12px 20px;
+			border-radius: 12px;
+			width: 10%;
+			border:2px solid black;
+			}
+			
+		#flip:hover {
+  			background-color: #5cd65c;
+			}
+			
+		#flip:active {
+  			background-color: #145214;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Heads or Tails?</h1>
-		<p id="buttonc"><button id="flip">Flip</button></p>
-		<p id="result"></p>
-		<p id="t"></p>
+		<div class="main"
+			<h1>Heads or Tails?</h1>
+			<p id="buttonc"><button id="flip">Flip</button></p>
+			<p id="result"></p>
+			<p id="t"></p>
+		</div>
 		<script>
 			document.getElementById("flip").onclick=function(){
 				var rawnumber=Math.floor(Math.random()*10)+1
